@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Contacts</string>
+
+    <string name="email">Email</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+    <string name="company">Company</string>
+    <string name="save">Save</string>
+</resources>

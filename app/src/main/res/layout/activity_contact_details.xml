@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactDetailsActivity">
+
+    <TextView
+        android:id="@+id/contactNameTextView"
+        style="@style/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/actionModeBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="name" />
+
+    <TextView
+        android:id="@+id/companyLabel"
+        style="@style/label"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:text="@string/company"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contactNameTextView" />
+
+    <TextView
+        android:id="@+id/companyTextView"
+        style="@style/contactValue"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="137dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contactNameTextView"
+        tools:text="company" />
+
+    <TextView
+        android:id="@+id/ageLabel"
+        style="@style/label"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:text="@string/age"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/companyLabel" />
+
+    <TextView
+        android:id="@+id/ageTextView"
+        style="@style/contactValue"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="137dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/companyLabel"
+        tools:text="age" />
+
+    <TextView
+        android:id="@+id/emailLabel"
+        style="@style/label"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ageLabel" />
+
+    <TextView
+        android:id="@+id/emailTextView"
+        style="@style/contactValue"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="137dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ageLabel"
+        tools:text="email" />
+
+    <TextView
+        android:id="@+id/genderLabel"
+        style="@style/label"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:text="@string/gender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailLabel" />
+
+    <TextView
+        android:id="@+id/genderTextView"
+        style="@style/contactValue"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="137dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailLabel"
+        tools:text="gender" />
+
+    <ImageView
+        android:id="@+id/photoView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/user"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genderLabel" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

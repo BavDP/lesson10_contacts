@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="margins">
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+    <style name="title" parent="@style/margins">
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <style name="label" parent="@style/margins">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="classification" parent="@style/margins">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/design_default_color_primary_dark</item>
+    </style>
+    <style name="contactValue" parent="@style/classification">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">right</item>
+    </style>
+</resources>

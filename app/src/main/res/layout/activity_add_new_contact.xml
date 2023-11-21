@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewContactActivity">
+
+    <EditText
+        android:id="@+id/addContactNameEditText"
+        style="@style/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/actionModeBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="name" />
+
+    <TextView
+        android:id="@+id/addCompanyLabel"
+        style="@style/label"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:text="@string/company"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addContactNameEditText" />
+
+    <EditText
+        android:id="@+id/companyEditText"
+        style="@style/contactValue"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="137dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addContactNameEditText"
+        tools:text="company" />
+
+    <TextView
+        android:id="@+id/addAgeLabel"
+        style="@style/label"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:text="@string/age"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addCompanyLabel" />
+
+    <EditText
+        android:id="@+id/addAgeEditText"
+        style="@style/contactValue"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="137dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addCompanyLabel"
+        tools:text="age" />
+
+    <TextView
+        android:id="@+id/addEmailLabel"
+        style="@style/label"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addAgeLabel" />
+
+    <EditText
+        android:id="@+id/addEmailEditText"
+        style="@style/contactValue"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="137dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addAgeLabel"
+        tools:text="email" />
+
+    <TextView
+        android:id="@+id/addGenderLabel"
+        style="@style/label"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:text="@string/gender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addEmailLabel" />
+
+    <EditText
+        android:id="@+id/addGenderEditText"
+        style="@style/contactValue"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="137dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addEmailLabel"
+        tools:text="gender" />
+
+    <Button
+        android:id="@+id/addSaveBtn"
+        style="@style/margins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        app:layout_constraintTop_toBottomOf="@+id/addGenderEditText"
+        tools:layout_editor_absoluteX="39dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
